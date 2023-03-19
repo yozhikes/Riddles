@@ -21,13 +21,10 @@ class MainActivity : AppCompatActivity() {
     var qty=0
     var yep=0
     var bruh=0
-    lateinit var mysong :MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bind= ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
-        mysong = MediaPlayer.create(this,R.raw.music)
-        mysong.start()
         zagadki= listOf("Тебе дано, а люди им пользуются.","Под гору — коняшка," +
                 " в гору — деревяшка.","На деревья, на кусты с неба падают цветы. Белые, пушистые," +
                 " только не душистые.","Сидит в темнице, красная девица, а коса на улице.","Зимой —" +
